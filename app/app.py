@@ -9,7 +9,7 @@ hst = os.environ.get('POSTGRES_HOST')
 prt = os.environ.get('POSTGRES_PORT')
 
 app = Flask(__name__)
-# Konfigurasi database
+# Konfigurasi database aja
 db_conn = psycopg2.connect(
     database = db_name,
     user = usr,
