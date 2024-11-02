@@ -1,25 +1,13 @@
 version: "3.8"
 
 services:
-<<<<<<< HEAD
-  app:
-    container_name: app
-    build:
-      context: ./app
-      dockerfile: Dockerfile
-=======
   app-prod:
     image: "${APP_IMAGE}:${APP_TAG}"
->>>>>>> 0ee0edf (initial commit)
     restart: always
     ports:
       - 5000:5000
     env_file:
       - .env
-<<<<<<< HEAD
-    depends_on:
-      - database
-=======
     networks:
       - absensi
 
@@ -46,7 +34,6 @@ services:
       - 5002:5000
     env_file:
       - .env
->>>>>>> 0ee0edf (initial commit)
     networks:
       - absensi
 
