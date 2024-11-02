@@ -30,7 +30,7 @@ jobs:
           script: |
 
             if [[ -d "${APP_PATH_STAGING}" ]]; then 
-              cd /home/ubuntu/$APP_PATH_STAGING
+              cd $APP_PATH_STAGING
               sudo docker compose down
               git pull origin main
             else
